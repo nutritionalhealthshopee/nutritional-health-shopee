@@ -1,4 +1,4 @@
-# 🌿 Nutritional Health Shopee
+# Nutritional Health Shopee
 
 **Holistic Healing for Body, Mind & Spirit**
 
@@ -7,7 +7,7 @@ We combine African healing traditions with modern wellness practices to help you
 
 ---
 
-## 💆‍♀️ Our Services
+## Our Services
 - **Reflexology** – Targets pressure points on your feet to improve circulation and relieve tension.  
 - **Massage Therapy** – Personalized massage sessions designed to ease stress and relax muscles.  
 - **Detox Programs** – Gentle, guided detox plans to cleanse your system and restore natural energy.
