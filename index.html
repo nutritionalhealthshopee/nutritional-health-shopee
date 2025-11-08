@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutritional Health Shopee</title>
+  <meta name="description" content="Experience natural wellness with Nutritional Health Shopee. Reflexology, Massage Therapy, and Detox services designed to restore balance and vitality.">
+  <meta name="keywords" content="massage therapy, reflexology, detox, wellness, natural health, holistic healing, Kenya, Nutritional Health Shopee">
+  <meta name="author" content="Nutritional Health Shopee" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e9f5ec;
+      color: #2f4f2f;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #2f4f2f;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    h2 {
+      color: #2f4f2f;
+    }
+
+    footer {
+      background-color: #2f4f2f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 180px;
+      height: 45px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 30px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 45px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+      z-index: 100;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20ba5a;
+      transform: scale(1.05);
+    }
+
+    /* Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background-color: #e9f5ec;
+      border: 1px solid #cce3d3;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      padding: 1rem 1.5rem;
+      font-size: 14px;
+      color: #2f4f2f;
+      width: 230px;
+      text-align: center;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Nutritional Health Shopee Logo" />
+    <h1>Nutritional Health Shopee</h1>
+    <p>Holistic Healing for Body, Mind & Spirit</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Nutritional Health Shopee</strong>, we believe true wellness begins with balance — 
+      between the body, mind, and spirit. We offer natural and therapeutic treatments inspired 
+      by African healing traditions to help you rejuvenate, restore, and reconnect with your inner peace.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Reflexology:</strong> A relaxing therapy that targets pressure points on your feet to improve circulation and relieve tension.</li>
+      <li><strong>Massage Therapy:</strong> Personalized massage sessions designed to ease stress, relax muscles, and enhance overall wellbeing.</li>
+      <li><strong>Detox Programs:</strong> Gentle, guided detox plans to cleanse your system and restore natural energy and vitality.</li>
+    </ul>
+    <p>Shop section coming soon — featuring wellness products and natural supplements.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:nutritionalhealthshopee@gmail.com">nutritionalhealthshopee@gmail.com</a></p>
+    <p>Phone/WhatsApp: <a href="https://wa.me/254720203826" target="_blank">+254 720 203 826</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nutritional Health Shopee | All Rights Reserved</p>
+  </footer>
+
+  <!-- Popup Message -->
+  <div class="popup" id="thankYouPopup">
+    🌿 Thank you for reaching out!<br>
+    We’ll reply to your message shortly.
+  </div>
+
+  <!-- WhatsApp CTA Button -->
+  <a href="https://wa.me/254720203826" class="whatsapp-float" id="whatsappBtn" target="_blank" title="Chat with us on WhatsApp!">💬 Chat with us</a>
+
+  <script>
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    const popup = document.getElementById('thankYouPopup');
+
+    whatsappBtn.addEventListener('click', function() {
+      popup.style.display = 'block';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 4000); // popup stays for 4 seconds
+    });
+  </script>
+
+</body>
+</html>
